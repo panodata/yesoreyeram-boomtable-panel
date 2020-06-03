@@ -154,6 +154,7 @@ GrafanaBoomTableCtrl.prototype.render = function () {
     }
     let maxheightofpanel = this.panel.debug_mode ? originalHeight - 111 : originalHeight - 31;
     rootElem.css({ 'max-height': maxheightofpanel + "px" });
+    this.renderingCompleted();
   }
 };
 
